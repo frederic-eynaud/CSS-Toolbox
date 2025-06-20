@@ -31,3 +31,8 @@ body {
   bottom: 0;
   background: linear-gradient(to bottom, transparent, grey);
 }
+
+.scroll-section {
+  height: 100%;
+  overflow: auto;
+}
