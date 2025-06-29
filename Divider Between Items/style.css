@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  background-color: brown;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li {
+  display: inline;
+  margin: 0;
+  padding: 0 10px;
+}
+
+li:not(:last-child) {
+  border-inline-end: solid 2px white;
+}
