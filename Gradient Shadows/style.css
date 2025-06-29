@@ -1,0 +1,22 @@
+:root {
+  --gradient: linear-gradient(to bottom right, crimson, coral);
+}
+
+#my-div {
+  height: 200px;
+  width: 200px;
+  background-image: var(--gradient);
+  border-radius: 1rem;
+  position: relative;
+}
+
+#my-div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--gradient);
+  border-radius: inherit;
+  filter: blur(25px) brightness(1.5);
+  transform: translate(20%, 10%) scale(0.95);
+  z-index: -1;
+}
